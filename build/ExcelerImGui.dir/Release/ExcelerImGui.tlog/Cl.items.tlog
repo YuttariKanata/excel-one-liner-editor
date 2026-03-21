@@ -1,0 +1,8 @@
+C:\Users\Y_K_\wsp2\slin_ap\simple-editor\main.cpp;C:\Users\Y_K_\wsp2\slin_ap\simple-editor\build\ExcelerImGui.dir\Release\main.obj
+C:\Users\Y_K_\wsp2\slin_ap\simple-editor\extern\imgui\imgui.cpp;C:\Users\Y_K_\wsp2\slin_ap\simple-editor\build\ExcelerImGui.dir\Release\imgui.obj
+C:\Users\Y_K_\wsp2\slin_ap\simple-editor\extern\imgui\imgui_draw.cpp;C:\Users\Y_K_\wsp2\slin_ap\simple-editor\build\ExcelerImGui.dir\Release\imgui_draw.obj
+C:\Users\Y_K_\wsp2\slin_ap\simple-editor\extern\imgui\imgui_tables.cpp;C:\Users\Y_K_\wsp2\slin_ap\simple-editor\build\ExcelerImGui.dir\Release\imgui_tables.obj
+C:\Users\Y_K_\wsp2\slin_ap\simple-editor\extern\imgui\imgui_widgets.cpp;C:\Users\Y_K_\wsp2\slin_ap\simple-editor\build\ExcelerImGui.dir\Release\imgui_widgets.obj
+C:\Users\Y_K_\wsp2\slin_ap\simple-editor\extern\imgui\backends\imgui_impl_glfw.cpp;C:\Users\Y_K_\wsp2\slin_ap\simple-editor\build\ExcelerImGui.dir\Release\imgui_impl_glfw.obj
+C:\Users\Y_K_\wsp2\slin_ap\simple-editor\extern\imgui\backends\imgui_impl_opengl3.cpp;C:\Users\Y_K_\wsp2\slin_ap\simple-editor\build\ExcelerImGui.dir\Release\imgui_impl_opengl3.obj
+C:\Users\Y_K_\wsp2\slin_ap\simple-editor\extern\ImGuiColorTextEdit\TextEditor.cpp;C:\Users\Y_K_\wsp2\slin_ap\simple-editor\build\ExcelerImGui.dir\Release\TextEditor.obj

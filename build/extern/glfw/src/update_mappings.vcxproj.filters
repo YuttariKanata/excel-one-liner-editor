@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Y_K_\wsp2\slin_ap\simple-editor\build\CMakeFiles\40b9fa0d375f8533d5d1522c2fd38bd2\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Y_K_\wsp2\slin_ap\simple-editor\extern\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Y_K_\wsp2\slin_ap\simple-editor\extern\glfw\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Y_K_\wsp2\slin_ap\simple-editor\extern\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\Y_K_\wsp2\slin_ap\simple-editor\build\extern\glfw\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7DF47F0C-81A2-3C3D-A8C5-F8F15F14F0DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{80E6B269-D8ED-375F-AE61-DC5C88D0DEB6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

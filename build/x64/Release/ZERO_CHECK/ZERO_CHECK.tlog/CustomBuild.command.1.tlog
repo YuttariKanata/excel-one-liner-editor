@@ -1,0 +1,10 @@
+^C:\USERS\Y_K_\WSP2\SLIN_AP\SIMPLE-EDITOR\BUILD\CMAKEFILES\E0C74FDF1B0A71F3E90ED24EBB55040B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Y_K_/wsp2/slin_ap/simple-editor -BC:/Users/Y_K_/wsp2/slin_ap/simple-editor/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Y_K_/wsp2/slin_ap/simple-editor/build/ExcelerImGui.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
