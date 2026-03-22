@@ -1,0 +1,322 @@
+--- Tokenization Result ---
+[Unknown   ] : =
+[Keyword   ] : LAMBDA
+[LParen    ] : (
+[Identifier] : A
+[Comma     ] : ,
+[Identifier] : b
+[Comma     ] : ,
+[Identifier] : ro
+[Comma     ] : ,
+[Identifier] : REDUCE
+[LParen    ] : (
+[Identifier] : VSTACK
+[LParen    ] : (
+[Identifier] : A
+[Comma     ] : ,
+[Number    ] : 0
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : SEQUENCE
+[LParen    ] : (
+[Identifier] : b
+[RParen    ] : )
+[Comma     ] : ,
+[Keyword   ] : LAMBDA
+[LParen    ] : (
+[Identifier] : E
+[Comma     ] : ,
+[Identifier] : i
+[Comma     ] : ,
+[Keyword   ] : LET
+[LParen    ] : (
+[Identifier] : S
+[Comma     ] : ,
+[Identifier] : DROP
+[LParen    ] : (
+[Identifier] : E
+[Comma     ] : ,
+[Operator  ] : -
+[Number    ] : 1
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : x
+[Comma     ] : ,
+[Identifier] : INDEX
+[LParen    ] : (
+[Identifier] : S
+[Comma     ] : ,
+[Identifier] : SEQUENCE
+[LParen    ] : (
+[Identifier] : ro
+[Operator  ] : -
+[Identifier] : i
+[Operator  ] : +
+[Number    ] : 1
+[Comma     ] : ,
+[Comma     ] : ,
+[Identifier] : i
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : i
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : x_1
+[Comma     ] : ,
+[Identifier] : INDEX
+[LParen    ] : (
+[Identifier] : x
+[Comma     ] : ,
+[Number    ] : 1
+[Comma     ] : ,
+[Number    ] : 1
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : alpha
+[Comma     ] : ,
+[Keyword   ] : IF
+[LParen    ] : (
+[Identifier] : x_1
+[Unknown   ] : <
+[Number    ] : 0
+[Comma     ] : ,
+[Number    ] : 1
+[Comma     ] : ,
+[Operator  ] : -
+[Number    ] : 1
+[RParen    ] : )
+[Operator  ] : *
+[Identifier] : SQRT
+[LParen    ] : (
+[Identifier] : SUMSQ
+[LParen    ] : (
+[Identifier] : x
+[RParen    ] : )
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : v_1
+[Comma     ] : ,
+[Identifier] : x_1
+[Operator  ] : -
+[Identifier] : alpha
+[Comma     ] : ,
+[Identifier] : vn
+[Comma     ] : ,
+[Identifier] : DROP
+[LParen    ] : (
+[Identifier] : x
+[Comma     ] : ,
+[Number    ] : 1
+[RParen    ] : )
+[Operator  ] : /
+[Identifier] : v_1
+[Comma     ] : ,
+[Identifier] : v
+[Comma     ] : ,
+[Identifier] : VSTACK
+[LParen    ] : (
+[Number    ] : 1
+[Comma     ] : ,
+[Identifier] : vn
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : t
+[Comma     ] : ,
+[Identifier] : v_1
+[Operator  ] : *
+[Identifier] : v_1
+[Operator  ] : /
+[LParen    ] : (
+[Identifier] : alpha
+[Operator  ] : *
+[Identifier] : alpha
+[Operator  ] : -
+[Identifier] : alpha
+[Operator  ] : *
+[Identifier] : x_1
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : sub_S
+[Comma     ] : ,
+[Identifier] : DROP
+[LParen    ] : (
+[Identifier] : S
+[Comma     ] : ,
+[Identifier] : i
+[Operator  ] : -
+[Number    ] : 1
+[Comma     ] : ,
+[Identifier] : i
+[RParen    ] : )
+[Comma     ] : ,
+[Keyword   ] : IF
+[LParen    ] : (
+[Identifier] : b
+[Unknown   ] : =
+[Number    ] : 1
+[Comma     ] : ,
+[Identifier] : VSTACK
+[LParen    ] : (
+[Identifier] : alpha
+[Comma     ] : ,
+[Identifier] : vn
+[Comma     ] : ,
+[Identifier] : t
+[RParen    ] : )
+[Comma     ] : ,
+[Keyword   ] : IF
+[LParen    ] : (
+[Identifier] : i
+[Unknown   ] : =
+[Number    ] : 1
+[Comma     ] : ,
+[Identifier] : HSTACK
+[LParen    ] : (
+[Identifier] : VSTACK
+[LParen    ] : (
+[Identifier] : alpha
+[Comma     ] : ,
+[Identifier] : vn
+[Comma     ] : ,
+[Identifier] : t
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : sub_S
+[Operator  ] : -
+[Identifier] : MMULT
+[LParen    ] : (
+[Identifier] : t
+[Operator  ] : *
+[Identifier] : v
+[Comma     ] : ,
+[Identifier] : MMULT
+[LParen    ] : (
+[Identifier] : TOROW
+[LParen    ] : (
+[Identifier] : v
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : sub_S
+[RParen    ] : )
+[RParen    ] : )
+[RParen    ] : )
+[Comma     ] : ,
+[Keyword   ] : IF
+[LParen    ] : (
+[Identifier] : i
+[Unknown   ] : =
+[Identifier] : b
+[Comma     ] : ,
+[Identifier] : HSTACK
+[LParen    ] : (
+[Identifier] : DROP
+[LParen    ] : (
+[Identifier] : E
+[Comma     ] : ,
+[Comma     ] : ,
+[Operator  ] : -
+[Number    ] : 1
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : VSTACK
+[LParen    ] : (
+[Identifier] : INDEX
+[LParen    ] : (
+[Identifier] : S
+[Comma     ] : ,
+[Identifier] : SEQUENCE
+[LParen    ] : (
+[Identifier] : i
+[Operator  ] : -
+[Number    ] : 1
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : b
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : alpha
+[Comma     ] : ,
+[Identifier] : vn
+[Comma     ] : ,
+[Identifier] : t
+[RParen    ] : )
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : HSTACK
+[LParen    ] : (
+[Identifier] : TAKE
+[LParen    ] : (
+[Identifier] : E
+[Comma     ] : ,
+[Comma     ] : ,
+[Identifier] : i
+[Operator  ] : -
+[Number    ] : 1
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : VSTACK
+[LParen    ] : (
+[Identifier] : INDEX
+[LParen    ] : (
+[Identifier] : S
+[Comma     ] : ,
+[Identifier] : SEQUENCE
+[LParen    ] : (
+[Identifier] : i
+[Operator  ] : -
+[Number    ] : 1
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : i
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : alpha
+[Comma     ] : ,
+[Identifier] : vn
+[Comma     ] : ,
+[Identifier] : t
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : VSTACK
+[LParen    ] : (
+[Identifier] : TAKE
+[LParen    ] : (
+[Identifier] : S
+[Comma     ] : ,
+[Identifier] : i
+[Operator  ] : -
+[Number    ] : 1
+[Comma     ] : ,
+[Operator  ] : -
+[Identifier] : b
+[Operator  ] : +
+[Identifier] : i
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : sub_S
+[Operator  ] : -
+[Identifier] : MMULT
+[LParen    ] : (
+[Identifier] : t
+[Operator  ] : *
+[Identifier] : v
+[Comma     ] : ,
+[Identifier] : MMULT
+[LParen    ] : (
+[Identifier] : TOROW
+[LParen    ] : (
+[Identifier] : v
+[RParen    ] : )
+[Comma     ] : ,
+[Identifier] : sub_S
+[RParen    ] : )
+[RParen    ] : )
+[RParen    ] : )
+[RParen    ] : )
+[RParen    ] : )
+[RParen    ] : )
+[RParen    ] : )
+[RParen    ] : )
+[RParen    ] : )
+[RParen    ] : )
+[RParen    ] : )
