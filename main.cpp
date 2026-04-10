@@ -75,8 +75,8 @@ int main() {
     palette[(int)TextEditor::PaletteIndex::Cursor]                  = 0xffadafae; // カーソル
     palette[(int)TextEditor::PaletteIndex::Selection]               = 0xff784f26; // 選択範囲 (半透明の青)
     palette[(int)TextEditor::PaletteIndex::LineNumber]              = 0xff80766f; // 行番号
-    palette[(int)TextEditor::PaletteIndex::CurrentLineFill]         = 0xff2d2d2d; // 現在行の強調
-    palette[(int)TextEditor::PaletteIndex::CurrentLineEdge]         = 0xff454545; // 現在行の枠線
+    palette[(int)TextEditor::PaletteIndex::CurrentLineFill]         = 0x00000000; // 現在行の強調
+    palette[(int)TextEditor::PaletteIndex::CurrentLineEdge]         = 0xff282828; // 現在行の枠線
 
     // --- 文法要素の色 (VS Code風) ---
     palette[(int)TextEditor::PaletteIndex::Default]                 = 0xffd4d4d4; // 標準テキスト

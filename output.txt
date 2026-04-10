@@ -1,322 +1,933 @@
---- Tokenization Result ---
-[Unknown   ] : =
-[Keyword   ] : LAMBDA
-[LParen    ] : (
-[Identifier] : A
-[Comma     ] : ,
-[Identifier] : b
-[Comma     ] : ,
-[Identifier] : ro
-[Comma     ] : ,
-[Identifier] : REDUCE
-[LParen    ] : (
-[Identifier] : VSTACK
-[LParen    ] : (
-[Identifier] : A
-[Comma     ] : ,
-[Number    ] : 0
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : SEQUENCE
-[LParen    ] : (
-[Identifier] : b
-[RParen    ] : )
-[Comma     ] : ,
-[Keyword   ] : LAMBDA
-[LParen    ] : (
-[Identifier] : E
-[Comma     ] : ,
-[Identifier] : i
-[Comma     ] : ,
-[Keyword   ] : LET
-[LParen    ] : (
-[Identifier] : S
-[Comma     ] : ,
-[Identifier] : DROP
-[LParen    ] : (
-[Identifier] : E
-[Comma     ] : ,
-[Operator  ] : -
-[Number    ] : 1
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : x
-[Comma     ] : ,
-[Identifier] : INDEX
-[LParen    ] : (
-[Identifier] : S
-[Comma     ] : ,
-[Identifier] : SEQUENCE
-[LParen    ] : (
-[Identifier] : ro
-[Operator  ] : -
-[Identifier] : i
-[Operator  ] : +
-[Number    ] : 1
-[Comma     ] : ,
-[Comma     ] : ,
-[Identifier] : i
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : i
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : x_1
-[Comma     ] : ,
-[Identifier] : INDEX
-[LParen    ] : (
-[Identifier] : x
-[Comma     ] : ,
-[Number    ] : 1
-[Comma     ] : ,
-[Number    ] : 1
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : alpha
-[Comma     ] : ,
-[Keyword   ] : IF
-[LParen    ] : (
-[Identifier] : x_1
-[Unknown   ] : <
-[Number    ] : 0
-[Comma     ] : ,
-[Number    ] : 1
-[Comma     ] : ,
-[Operator  ] : -
-[Number    ] : 1
-[RParen    ] : )
-[Operator  ] : *
-[Identifier] : SQRT
-[LParen    ] : (
-[Identifier] : SUMSQ
-[LParen    ] : (
-[Identifier] : x
-[RParen    ] : )
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : v_1
-[Comma     ] : ,
-[Identifier] : x_1
-[Operator  ] : -
-[Identifier] : alpha
-[Comma     ] : ,
-[Identifier] : vn
-[Comma     ] : ,
-[Identifier] : DROP
-[LParen    ] : (
-[Identifier] : x
-[Comma     ] : ,
-[Number    ] : 1
-[RParen    ] : )
-[Operator  ] : /
-[Identifier] : v_1
-[Comma     ] : ,
-[Identifier] : v
-[Comma     ] : ,
-[Identifier] : VSTACK
-[LParen    ] : (
-[Number    ] : 1
-[Comma     ] : ,
-[Identifier] : vn
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : t
-[Comma     ] : ,
-[Identifier] : v_1
-[Operator  ] : *
-[Identifier] : v_1
-[Operator  ] : /
-[LParen    ] : (
-[Identifier] : alpha
-[Operator  ] : *
-[Identifier] : alpha
-[Operator  ] : -
-[Identifier] : alpha
-[Operator  ] : *
-[Identifier] : x_1
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : sub_S
-[Comma     ] : ,
-[Identifier] : DROP
-[LParen    ] : (
-[Identifier] : S
-[Comma     ] : ,
-[Identifier] : i
-[Operator  ] : -
-[Number    ] : 1
-[Comma     ] : ,
-[Identifier] : i
-[RParen    ] : )
-[Comma     ] : ,
-[Keyword   ] : IF
-[LParen    ] : (
-[Identifier] : b
-[Unknown   ] : =
-[Number    ] : 1
-[Comma     ] : ,
-[Identifier] : VSTACK
-[LParen    ] : (
-[Identifier] : alpha
-[Comma     ] : ,
-[Identifier] : vn
-[Comma     ] : ,
-[Identifier] : t
-[RParen    ] : )
-[Comma     ] : ,
-[Keyword   ] : IF
-[LParen    ] : (
-[Identifier] : i
-[Unknown   ] : =
-[Number    ] : 1
-[Comma     ] : ,
-[Identifier] : HSTACK
-[LParen    ] : (
-[Identifier] : VSTACK
-[LParen    ] : (
-[Identifier] : alpha
-[Comma     ] : ,
-[Identifier] : vn
-[Comma     ] : ,
-[Identifier] : t
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : sub_S
-[Operator  ] : -
-[Identifier] : MMULT
-[LParen    ] : (
-[Identifier] : t
-[Operator  ] : *
-[Identifier] : v
-[Comma     ] : ,
-[Identifier] : MMULT
-[LParen    ] : (
-[Identifier] : TOROW
-[LParen    ] : (
-[Identifier] : v
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : sub_S
-[RParen    ] : )
-[RParen    ] : )
-[RParen    ] : )
-[Comma     ] : ,
-[Keyword   ] : IF
-[LParen    ] : (
-[Identifier] : i
-[Unknown   ] : =
-[Identifier] : b
-[Comma     ] : ,
-[Identifier] : HSTACK
-[LParen    ] : (
-[Identifier] : DROP
-[LParen    ] : (
-[Identifier] : E
-[Comma     ] : ,
-[Comma     ] : ,
-[Operator  ] : -
-[Number    ] : 1
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : VSTACK
-[LParen    ] : (
-[Identifier] : INDEX
-[LParen    ] : (
-[Identifier] : S
-[Comma     ] : ,
-[Identifier] : SEQUENCE
-[LParen    ] : (
-[Identifier] : i
-[Operator  ] : -
-[Number    ] : 1
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : b
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : alpha
-[Comma     ] : ,
-[Identifier] : vn
-[Comma     ] : ,
-[Identifier] : t
-[RParen    ] : )
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : HSTACK
-[LParen    ] : (
-[Identifier] : TAKE
-[LParen    ] : (
-[Identifier] : E
-[Comma     ] : ,
-[Comma     ] : ,
-[Identifier] : i
-[Operator  ] : -
-[Number    ] : 1
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : VSTACK
-[LParen    ] : (
-[Identifier] : INDEX
-[LParen    ] : (
-[Identifier] : S
-[Comma     ] : ,
-[Identifier] : SEQUENCE
-[LParen    ] : (
-[Identifier] : i
-[Operator  ] : -
-[Number    ] : 1
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : i
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : alpha
-[Comma     ] : ,
-[Identifier] : vn
-[Comma     ] : ,
-[Identifier] : t
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : VSTACK
-[LParen    ] : (
-[Identifier] : TAKE
-[LParen    ] : (
-[Identifier] : S
-[Comma     ] : ,
-[Identifier] : i
-[Operator  ] : -
-[Number    ] : 1
-[Comma     ] : ,
-[Operator  ] : -
-[Identifier] : b
-[Operator  ] : +
-[Identifier] : i
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : sub_S
-[Operator  ] : -
-[Identifier] : MMULT
-[LParen    ] : (
-[Identifier] : t
-[Operator  ] : *
-[Identifier] : v
-[Comma     ] : ,
-[Identifier] : MMULT
-[LParen    ] : (
-[Identifier] : TOROW
-[LParen    ] : (
-[Identifier] : v
-[RParen    ] : )
-[Comma     ] : ,
-[Identifier] : sub_S
-[RParen    ] : )
-[RParen    ] : )
-[RParen    ] : )
-[RParen    ] : )
-[RParen    ] : )
-[RParen    ] : )
-[RParen    ] : )
-[RParen    ] : )
-[RParen    ] : )
-[RParen    ] : )
-[RParen    ] : )
+--- Excel Formula Tokenization Report ---
+Total Tokens: 927
+Token number / input.size(): 0.531537
+
+Index Type           Value
+----------------------------------------
+0     [Comparison] : =
+1     [Identifier] : LAMBDA
+2     [LParen    ] : (
+3     [Identifier] : num_p
+4     [Comma     ] : ,
+5     [Identifier] : function
+6     [Comma     ] : ,
+7     [LBracket  ] : [
+8     [Identifier] : tol
+9     [RBracket  ] : ]
+10    [Comma     ] : ,
+11    [LBracket  ] : [
+12    [Identifier] : detail
+13    [RBracket  ] : ]
+14    [Comma     ] : ,
+15    [Identifier] : LET
+16    [LParen    ] : (
+17    [Identifier] : m
+18    [Comma     ] : ,
+19    [Identifier] : num_p
+20    [Comma     ] : ,
+21    [Identifier] : init_d
+22    [Comma     ] : ,
+23    [Identifier] : IF
+24    [LParen    ] : (
+25    [Identifier] : ISOMITTED
+26    [LParen    ] : (
+27    [Identifier] : num_init
+28    [RParen    ] : )
+29    [Comma     ] : ,
+30    [Identifier] : EXPAND
+31    [LParen    ] : (
+32    [Number    ] : 1
+33    [Comma     ] : ,
+34    [Identifier] : m
+35    [Comma     ] : ,
+36    [Number    ] : 1
+37    [Comma     ] : ,
+38    [Number    ] : 1
+39    [RParen    ] : )
+40    [Comma     ] : ,
+41    [Identifier] : num_init
+42    [RParen    ] : )
+43    [Comma     ] : ,
+44    [Identifier] : f
+45    [Comma     ] : ,
+46    [Identifier] : LAMBDA
+47    [LParen    ] : (
+48    [Identifier] : d
+49    [Comma     ] : ,
+50    [Identifier] : function
+51    [LParen    ] : (
+52    [Identifier] : d
+53    [RParen    ] : )
+54    [RParen    ] : )
+55    [Comma     ] : ,
+56    [Identifier] : h
+57    [Comma     ] : ,
+58    [Number    ] : 0.0001
+59    [Comma     ] : ,
+60    [Identifier] : dh
+61    [Comma     ] : ,
+62    [Identifier] : h
+63    [Operator  ] : *
+64    [Identifier] : MUNIT
+65    [LParen    ] : (
+66    [Identifier] : m
+67    [RParen    ] : )
+68    [Comma     ] : ,
+69    [Identifier] : JT
+70    [Comma     ] : ,
+71    [Identifier] : LAMBDA
+72    [LParen    ] : (
+73    [Identifier] : d
+74    [Comma     ] : ,
+75    [Identifier] : TRANSPOSE
+76    [LParen    ] : (
+77    [Number    ] : 1
+78    [Operator  ] : /
+79    [LParen    ] : (
+80    [Number    ] : 12
+81    [Operator  ] : *
+82    [Identifier] : h
+83    [RParen    ] : )
+84    [Operator  ] : *
+85    [LParen    ] : (
+86    [Operator  ] : -
+87    [Identifier] : f
+88    [LParen    ] : (
+89    [Identifier] : d
+90    [Operator  ] : +
+91    [Number    ] : 2
+92    [Operator  ] : *
+93    [Identifier] : dh
+94    [RParen    ] : )
+95    [Operator  ] : +
+96    [Number    ] : 8
+97    [Operator  ] : *
+98    [Identifier] : f
+99    [LParen    ] : (
+100   [Identifier] : d
+101   [Operator  ] : +
+102   [Identifier] : dh
+103   [RParen    ] : )
+104   [Operator  ] : -
+105   [Number    ] : 8
+106   [Operator  ] : *
+107   [Identifier] : f
+108   [LParen    ] : (
+109   [Identifier] : d
+110   [Operator  ] : -
+111   [Identifier] : dh
+112   [RParen    ] : )
+113   [Operator  ] : +
+114   [Identifier] : f
+115   [LParen    ] : (
+116   [Identifier] : d
+117   [Operator  ] : -
+118   [Number    ] : 2
+119   [Operator  ] : *
+120   [Identifier] : dh
+121   [RParen    ] : )
+122   [RParen    ] : )
+123   [RParen    ] : )
+124   [RParen    ] : )
+125   [Comma     ] : ,
+126   [Identifier] : sf
+127   [Comma     ] : ,
+128   [Identifier] : LAMBDA
+129   [LParen    ] : (
+130   [Identifier] : d
+131   [Comma     ] : ,
+132   [Identifier] : SUMSQ
+133   [LParen    ] : (
+134   [Identifier] : f
+135   [LParen    ] : (
+136   [Identifier] : d
+137   [RParen    ] : )
+138   [RParen    ] : )
+139   [Operator  ] : *
+140   [Number    ] : 0.5
+141   [RParen    ] : )
+142   [Comma     ] : ,
+143   [Identifier] : Delta_max
+144   [Comma     ] : ,
+145   [Number    ] : 1000
+146   [Comma     ] : ,
+147   [Identifier] : eta
+148   [Comma     ] : ,
+149   [Number    ] : 0.2
+150   [Comma     ] : ,
+151   [Identifier] : mnmz
+152   [Comma     ] : ,
+153   [Identifier] : LAMBDA
+154   [LParen    ] : (
+155   [Identifier] : Hs
+156   [Comma     ] : ,
+157   [Identifier] : gd
+158   [Comma     ] : ,
+159   [Identifier] : Delta
+160   [Comma     ] : ,
+161   [Unknown   ] : Œ
+162   [Unknown   ] : ª
+163   [Comma     ] : ,
+164   [Identifier] : Re
+165   [Comma     ] : ,
+166   [Identifier] : LET
+167   [LParen    ] : (
+168   [Identifier] : Q
+169   [Comma     ] : ,
+170   [Identifier] : Hs
+171   [Operator  ] : +
+172   [Unknown   ] : Œ
+173   [Unknown   ] : ª
+174   [Operator  ] : *
+175   [Identifier] : MUNIT
+176   [LParen    ] : (
+177   [Identifier] : m
+178   [RParen    ] : )
+179   [Comma     ] : ,
+180   [Identifier] : L
+181   [Comma     ] : ,
+182   [Identifier] : Cholesky_Dec
+183   [LParen    ] : (
+184   [Identifier] : Q
+185   [RParen    ] : )
+186   [Comma     ] : ,
+187   [Identifier] : eL
+188   [Comma     ] : ,
+189   [Identifier] : ISERROR
+190   [LParen    ] : (
+191   [Identifier] : INDEX
+192   [LParen    ] : (
+193   [Identifier] : L
+194   [Comma     ] : ,
+195   [Number    ] : 1
+196   [Comma     ] : ,
+197   [Number    ] : 1
+198   [RParen    ] : )
+199   [RParen    ] : )
+200   [Comma     ] : ,
+201   [Identifier] : s
+202   [Comma     ] : ,
+203   [Identifier] : IF
+204   [LParen    ] : (
+205   [Identifier] : eL
+206   [Comma     ] : ,
+207   [Number    ] : 1
+208   [Comma     ] : ,
+209   [Identifier] : MMULT
+210   [LParen    ] : (
+211   [Identifier] : MINVERSE
+212   [LParen    ] : (
+213   [Identifier] : Q
+214   [RParen    ] : )
+215   [Comma     ] : ,
+216   [Operator  ] : -
+217   [Identifier] : gd
+218   [RParen    ] : )
+219   [RParen    ] : )
+220   [Comma     ] : ,
+221   [Identifier] : ns
+222   [Comma     ] : ,
+223   [Identifier] : SUMSQ
+224   [LParen    ] : (
+225   [Identifier] : s
+226   [RParen    ] : )
+227   [Comma     ] : ,
+228   [Identifier] : w
+229   [Comma     ] : ,
+230   [Identifier] : IF
+231   [LParen    ] : (
+232   [Identifier] : eL
+233   [Comma     ] : ,
+234   [Number    ] : 0
+235   [Comma     ] : ,
+236   [Identifier] : IF
+237   [LParen    ] : (
+238   [Identifier] : m
+239   [Comparison] : =
+240   [Number    ] : 1
+241   [Comma     ] : ,
+242   [Identifier] : INDEX
+243   [LParen    ] : (
+244   [Identifier] : s
+245   [Comma     ] : ,
+246   [Number    ] : 1
+247   [Comma     ] : ,
+248   [Number    ] : 1
+249   [RParen    ] : )
+250   [Operator  ] : /
+251   [Identifier] : INDEX
+252   [LParen    ] : (
+253   [Identifier] : L
+254   [Comma     ] : ,
+255   [Number    ] : 1
+256   [Comma     ] : ,
+257   [Number    ] : 1
+258   [RParen    ] : )
+259   [Comma     ] : ,
+260   [Identifier] : REDUCE
+261   [LParen    ] : (
+262   [Identifier] : INDEX
+263   [LParen    ] : (
+264   [Identifier] : s
+265   [Comma     ] : ,
+266   [Number    ] : 1
+267   [Comma     ] : ,
+268   [Number    ] : 1
+269   [RParen    ] : )
+270   [Operator  ] : /
+271   [Identifier] : INDEX
+272   [LParen    ] : (
+273   [Identifier] : L
+274   [Comma     ] : ,
+275   [Number    ] : 1
+276   [Comma     ] : ,
+277   [Number    ] : 1
+278   [RParen    ] : )
+279   [Comma     ] : ,
+280   [Identifier] : SEQUENCE
+281   [LParen    ] : (
+282   [Identifier] : m
+283   [Operator  ] : -
+284   [Number    ] : 1
+285   [Comma     ] : ,
+286   [Comma     ] : ,
+287   [Number    ] : 2
+288   [RParen    ] : )
+289   [Comma     ] : ,
+290   [Identifier] : LAMBDA
+291   [LParen    ] : (
+292   [Identifier] : w
+293   [Comma     ] : ,
+294   [Identifier] : k
+295   [Comma     ] : ,
+296   [Identifier] : VSTACK
+297   [LParen    ] : (
+298   [Identifier] : w
+299   [Comma     ] : ,
+300   [Identifier] : SUM
+301   [LParen    ] : (
+302   [Identifier] : INDEX
+303   [LParen    ] : (
+304   [Identifier] : s
+305   [Comma     ] : ,
+306   [Identifier] : k
+307   [Comma     ] : ,
+308   [Number    ] : 1
+309   [RParen    ] : )
+310   [Comma     ] : ,
+311   [Operator  ] : -
+312   [Identifier] : w
+313   [Operator  ] : *
+314   [Identifier] : INDEX
+315   [LParen    ] : (
+316   [Identifier] : L
+317   [Comma     ] : ,
+318   [Identifier] : k
+319   [Comma     ] : ,
+320   [Identifier] : SEQUENCE
+321   [LParen    ] : (
+322   [Identifier] : k
+323   [Operator  ] : -
+324   [Number    ] : 1
+325   [RParen    ] : )
+326   [RParen    ] : )
+327   [RParen    ] : )
+328   [Operator  ] : /
+329   [Identifier] : INDEX
+330   [LParen    ] : (
+331   [Identifier] : L
+332   [Comma     ] : ,
+333   [Identifier] : k
+334   [Comma     ] : ,
+335   [Identifier] : k
+336   [RParen    ] : )
+337   [RParen    ] : )
+338   [RParen    ] : )
+339   [RParen    ] : )
+340   [RParen    ] : )
+341   [RParen    ] : )
+342   [Comma     ] : ,
+343   [Identifier] : d
+344   [Unknown   ] : Œ
+345   [Unknown   ] : ª
+346   [Comma     ] : ,
+347   [Identifier] : IF
+348   [LParen    ] : (
+349   [Identifier] : eL
+350   [Comma     ] : ,
+351   [Number    ] : 1
+352   [Comma     ] : ,
+353   [Identifier] : ns
+354   [Operator  ] : /
+355   [Identifier] : SUMSQ
+356   [LParen    ] : (
+357   [Identifier] : w
+358   [RParen    ] : )
+359   [Operator  ] : *
+360   [LParen    ] : (
+361   [Identifier] : SQRT
+362   [LParen    ] : (
+363   [Identifier] : ns
+364   [RParen    ] : )
+365   [Operator  ] : -
+366   [Identifier] : Delta
+367   [RParen    ] : )
+368   [Operator  ] : /
+369   [Identifier] : Delta
+370   [RParen    ] : )
+371   [Comma     ] : ,
+372   [Identifier] : IF
+373   [LParen    ] : (
+374   [Identifier] : OR
+375   [LParen    ] : (
+376   [Identifier] : AND
+377   [LParen    ] : (
+378   [Identifier] : ABS
+379   [LParen    ] : (
+380   [Identifier] : d
+381   [Unknown   ] : Œ
+382   [Unknown   ] : ª
+383   [RParen    ] : )
+384   [Comparison] : <
+385   [Number    ] : 10
+386   [Operator  ] : ^
+387   [Operator  ] : -
+388   [Number    ] : 8
+389   [Comma     ] : ,
+390   [Identifier] : NOT
+391   [LParen    ] : (
+392   [Identifier] : eL
+393   [RParen    ] : )
+394   [RParen    ] : )
+395   [Comma     ] : ,
+396   [Unknown   ] : Œ
+397   [Unknown   ] : ª
+398   [Operator  ] : +
+399   [Identifier] : d
+400   [Unknown   ] : Œ
+401   [Unknown   ] : ª
+402   [Comparison] : <
+403   [Number    ] : 0
+404   [RParen    ] : )
+405   [Comma     ] : ,
+406   [Identifier] : s
+407   [Comma     ] : ,
+408   [Identifier] : Re
+409   [LParen    ] : (
+410   [Identifier] : Hs
+411   [Comma     ] : ,
+412   [Identifier] : gd
+413   [Comma     ] : ,
+414   [Identifier] : Delta
+415   [Comma     ] : ,
+416   [Identifier] : IF
+417   [LParen    ] : (
+418   [Identifier] : eL
+419   [Comma     ] : ,
+420   [Identifier] : MAX
+421   [LParen    ] : (
+422   [Number    ] : 1
+423   [Comma     ] : ,
+424   [Number    ] : 2
+425   [Operator  ] : *
+426   [Unknown   ] : Œ
+427   [Unknown   ] : ª
+428   [RParen    ] : )
+429   [Comma     ] : ,
+430   [Identifier] : MAX
+431   [LParen    ] : (
+432   [Number    ] : 0
+433   [Comma     ] : ,
+434   [Unknown   ] : Œ
+435   [Unknown   ] : ª
+436   [Operator  ] : +
+437   [Identifier] : d
+438   [Unknown   ] : Œ
+439   [Unknown   ] : ª
+440   [RParen    ] : )
+441   [RParen    ] : )
+442   [Comma     ] : ,
+443   [Identifier] : Re
+444   [RParen    ] : )
+445   [RParen    ] : )
+446   [RParen    ] : )
+447   [RParen    ] : )
+448   [Comma     ] : ,
+449   [Identifier] : rep
+450   [Comma     ] : ,
+451   [Identifier] : LAMBDA
+452   [LParen    ] : (
+453   [Identifier] : tag
+454   [Comma     ] : ,
+455   [Identifier] : d
+456   [Comma     ] : ,
+457   [Identifier] : sfd
+458   [Comma     ] : ,
+459   [Identifier] : JT_d
+460   [Comma     ] : ,
+461   [Identifier] : gd
+462   [Comma     ] : ,
+463   [Identifier] : Hesse
+464   [Comma     ] : ,
+465   [Identifier] : Delta
+466   [Comma     ] : ,
+467   [Identifier] : rep
+468   [Comma     ] : ,
+469   [Identifier] : LET
+470   [LParen    ] : (
+471   [Identifier] : s
+472   [Comma     ] : ,
+473   [Identifier] : mnmz
+474   [LParen    ] : (
+475   [Identifier] : Hesse
+476   [Comma     ] : ,
+477   [Identifier] : gd
+478   [Comma     ] : ,
+479   [Identifier] : Delta
+480   [Comma     ] : ,
+481   [Number    ] : 0
+482   [Comma     ] : ,
+483   [Identifier] : mnmz
+484   [RParen    ] : )
+485   [Comma     ] : ,
+486   [Identifier] : ns
+487   [Comma     ] : ,
+488   [Identifier] : SQRT
+489   [LParen    ] : (
+490   [Identifier] : SUMSQ
+491   [LParen    ] : (
+492   [Identifier] : s
+493   [RParen    ] : )
+494   [RParen    ] : )
+495   [Comma     ] : ,
+496   [Unknown   ] : œ
+497   [Unknown   ] : Å
+498   [Comma     ] : ,
+499   [LParen    ] : (
+500   [Identifier] : sf
+501   [LParen    ] : (
+502   [Identifier] : d
+503   [Operator  ] : +
+504   [Identifier] : s
+505   [RParen    ] : )
+506   [Operator  ] : -
+507   [Identifier] : sfd
+508   [RParen    ] : )
+509   [Operator  ] : /
+510   [Identifier] : MMULT
+511   [LParen    ] : (
+512   [Identifier] : TOROW
+513   [LParen    ] : (
+514   [Identifier] : s
+515   [RParen    ] : )
+516   [Comma     ] : ,
+517   [Identifier] : gd
+518   [Operator  ] : +
+519   [Number    ] : 0.5
+520   [Operator  ] : *
+521   [Identifier] : MMULT
+522   [LParen    ] : (
+523   [Identifier] : Hesse
+524   [Comma     ] : ,
+525   [Identifier] : s
+526   [RParen    ] : )
+527   [RParen    ] : )
+528   [Comma     ] : ,
+529   [Identifier] : new_d
+530   [Comma     ] : ,
+531   [Identifier] : IF
+532   [LParen    ] : (
+533   [Unknown   ] : œ
+534   [Unknown   ] : Å
+535   [Comparison] : >
+536   [Identifier] : eta
+537   [Comma     ] : ,
+538   [Identifier] : d
+539   [Operator  ] : +
+540   [Identifier] : s
+541   [Comma     ] : ,
+542   [Identifier] : d
+543   [RParen    ] : )
+544   [Comma     ] : ,
+545   [Identifier] : new_sfd
+546   [Comma     ] : ,
+547   [Identifier] : IF
+548   [LParen    ] : (
+549   [Unknown   ] : œ
+550   [Unknown   ] : Å
+551   [Comparison] : >
+552   [Identifier] : eta
+553   [Comma     ] : ,
+554   [Identifier] : sf
+555   [LParen    ] : (
+556   [Identifier] : new_d
+557   [RParen    ] : )
+558   [Comma     ] : ,
+559   [Identifier] : sfd
+560   [RParen    ] : )
+561   [Comma     ] : ,
+562   [Identifier] : new_JT_d
+563   [Comma     ] : ,
+564   [Identifier] : IF
+565   [LParen    ] : (
+566   [Unknown   ] : œ
+567   [Unknown   ] : Å
+568   [Comparison] : >
+569   [Identifier] : eta
+570   [Comma     ] : ,
+571   [Identifier] : JT
+572   [LParen    ] : (
+573   [Identifier] : new_d
+574   [RParen    ] : )
+575   [Comma     ] : ,
+576   [Identifier] : JT_d
+577   [RParen    ] : )
+578   [Comma     ] : ,
+579   [Identifier] : new_gd
+580   [Comma     ] : ,
+581   [Identifier] : IF
+582   [LParen    ] : (
+583   [Unknown   ] : œ
+584   [Unknown   ] : Å
+585   [Comparison] : >
+586   [Identifier] : eta
+587   [Comma     ] : ,
+588   [Identifier] : MMULT
+589   [LParen    ] : (
+590   [Identifier] : new_JT_d
+591   [Comma     ] : ,
+592   [Identifier] : f
+593   [LParen    ] : (
+594   [Identifier] : new_d
+595   [RParen    ] : )
+596   [RParen    ] : )
+597   [Comma     ] : ,
+598   [Identifier] : gd
+599   [RParen    ] : )
+600   [Comma     ] : ,
+601   [Identifier] : y
+602   [Comma     ] : ,
+603   [Identifier] : new_gd
+604   [Operator  ] : -
+605   [Identifier] : gd
+606   [Comma     ] : ,
+607   [Unknown   ] : Œ
+608   [Unknown   ] : Ω
+609   [Comma     ] : ,
+610   [Identifier] : MMULT
+611   [LParen    ] : (
+612   [Identifier] : Hesse
+613   [Comma     ] : ,
+614   [Identifier] : s
+615   [RParen    ] : )
+616   [Comma     ] : ,
+617   [Unknown   ] : œ
+618   [Unknown   ] : É
+619   [Comma     ] : ,
+620   [Identifier] : MMULT
+621   [LParen    ] : (
+622   [Identifier] : TOROW
+623   [LParen    ] : (
+624   [Identifier] : s
+625   [RParen    ] : )
+626   [Comma     ] : ,
+627   [Unknown   ] : Œ
+628   [Unknown   ] : Ω
+629   [RParen    ] : )
+630   [Comma     ] : ,
+631   [Unknown   ] : Œ
+632   [Unknown   ] : ≥
+633   [Comma     ] : ,
+634   [Identifier] : SUM
+635   [LParen    ] : (
+636   [Identifier] : y
+637   [Operator  ] : *
+638   [Identifier] : s
+639   [RParen    ] : )
+640   [Comma     ] : ,
+641   [Unknown   ] : Œ
+642   [Unknown   ] : ∏
+643   [Comma     ] : ,
+644   [Identifier] : IF
+645   [LParen    ] : (
+646   [Unknown   ] : Œ
+647   [Unknown   ] : ≥
+648   [Comparison] : <
+649   [Number    ] : 0.2
+650   [Operator  ] : *
+651   [Unknown   ] : œ
+652   [Unknown   ] : É
+653   [Comma     ] : ,
+654   [Number    ] : 0.8
+655   [Operator  ] : *
+656   [Unknown   ] : œ
+657   [Unknown   ] : É
+658   [Operator  ] : /
+659   [LParen    ] : (
+660   [Unknown   ] : œ
+661   [Unknown   ] : É
+662   [Operator  ] : -
+663   [Unknown   ] : Œ
+664   [Unknown   ] : ≥
+665   [RParen    ] : )
+666   [Comma     ] : ,
+667   [Number    ] : 1
+668   [RParen    ] : )
+669   [Comma     ] : ,
+670   [Identifier] : r
+671   [Comma     ] : ,
+672   [Unknown   ] : Œ
+673   [Unknown   ] : ∏
+674   [Operator  ] : *
+675   [Identifier] : y
+676   [Operator  ] : +
+677   [LParen    ] : (
+678   [Error     ] : 1
+679   [Operator  ] : -
+680   [Unknown   ] : Œ
+681   [Unknown   ] : ∏
+682   [RParen    ] : )
+683   [Operator  ] : *
+684   [Unknown   ] : Œ
+685   [Unknown   ] : Ω
+686   [Comma     ] : ,
+687   [Identifier] : IF
+688   [LParen    ] : (
+689   [Identifier] : MAX
+690   [LParen    ] : (
+691   [Identifier] : ABS
+692   [LParen    ] : (
+693   [Identifier] : new_gd
+694   [RParen    ] : )
+695   [RParen    ] : )
+696   [Comparison] : <
+697   [Number    ] : 10
+698   [Operator  ] : ^
+699   [Operator  ] : -
+700   [Identifier] : IF
+701   [LParen    ] : (
+702   [Identifier] : ISOMITTED
+703   [LParen    ] : (
+704   [Identifier] : tol
+705   [RParen    ] : )
+706   [Comma     ] : ,
+707   [Number    ] : 8
+708   [Comma     ] : ,
+709   [Identifier] : tol
+710   [RParen    ] : )
+711   [Comma     ] : ,
+712   [Identifier] : IF
+713   [LParen    ] : (
+714   [Identifier] : OR
+715   [LParen    ] : (
+716   [Identifier] : ISOMITTED
+717   [LParen    ] : (
+718   [Identifier] : detail
+719   [RParen    ] : )
+720   [Comma     ] : ,
+721   [Identifier] : detail
+722   [Comparison] : =
+723   [Number    ] : 0
+724   [RParen    ] : )
+725   [Comma     ] : ,
+726   [Identifier] : new_d
+727   [Comma     ] : ,
+728   [Identifier] : IF
+729   [LParen    ] : (
+730   [Identifier] : detail
+731   [Comparison] : =
+732   [Number    ] : 1
+733   [Comma     ] : ,
+734   [Identifier] : HSTACK
+735   [LParen    ] : (
+736   [Identifier] : tag
+737   [Comma     ] : ,
+738   [Identifier] : new_d
+739   [RParen    ] : )
+740   [Comma     ] : ,
+741   [Identifier] : VSTACK
+742   [LParen    ] : (
+743   [Identifier] : HSTACK
+744   [LParen    ] : (
+745   [String    ] : "ÂèçÂæ©ÂõûÊï∞ : "
+746   [Comma     ] : ,
+747   [Identifier] : tag
+748   [Unknown   ] : &
+749   [String    ] : "Âõû"
+750   [RParen    ] : )
+751   [Comma     ] : ,
+752   [Identifier] : HSTACK
+753   [LParen    ] : (
+754   [String    ] : "„Éë„É©„É°„Éº„Çø : "
+755   [Comma     ] : ,
+756   [Identifier] : new_d
+757   [RParen    ] : )
+758   [Comma     ] : ,
+759   [Identifier] : HSTACK
+760   [LParen    ] : (
+761   [String    ] : "Èñ¢Êï∞„ÅÆ2„Éé„É´„É† : "
+762   [Comma     ] : ,
+763   [Identifier] : SQRT
+764   [LParen    ] : (
+765   [Identifier] : new_sfd
+766   [RParen    ] : )
+767   [RParen    ] : )
+768   [Comma     ] : ,
+769   [Identifier] : HSTACK
+770   [LParen    ] : (
+771   [String    ] : "Èñ¢Êï∞ÂãæÈÖç : "
+772   [Comma     ] : ,
+773   [Identifier] : new_gd
+774   [RParen    ] : )
+775   [RParen    ] : )
+776   [RParen    ] : )
+777   [RParen    ] : )
+778   [Comma     ] : ,
+779   [Identifier] : rep
+780   [LParen    ] : (
+781   [Identifier] : tag
+782   [Operator  ] : +
+783   [Number    ] : 1
+784   [Comma     ] : ,
+785   [Identifier] : new_d
+786   [Comma     ] : ,
+787   [Identifier] : new_sfd
+788   [Comma     ] : ,
+789   [Identifier] : new_JT_d
+790   [Comma     ] : ,
+791   [Identifier] : new_gd
+792   [Comma     ] : ,
+793   [Identifier] : Hesse
+794   [Operator  ] : -
+795   [Identifier] : IF
+796   [LParen    ] : (
+797   [Unknown   ] : œ
+798   [Unknown   ] : Å
+799   [Comparison] : >
+800   [Identifier] : eta
+801   [Comma     ] : ,
+802   [Identifier] : MMULT
+803   [LParen    ] : (
+804   [Unknown   ] : Œ
+805   [Unknown   ] : Ω
+806   [Operator  ] : /
+807   [Unknown   ] : œ
+808   [Unknown   ] : É
+809   [Comma     ] : ,
+810   [Identifier] : TOROW
+811   [LParen    ] : (
+812   [Unknown   ] : Œ
+813   [Unknown   ] : Ω
+814   [RParen    ] : )
+815   [RParen    ] : )
+816   [Operator  ] : -
+817   [Identifier] : MMULT
+818   [LParen    ] : (
+819   [Identifier] : r
+820   [Comma     ] : ,
+821   [Identifier] : TOROW
+822   [LParen    ] : (
+823   [Identifier] : r
+824   [RParen    ] : )
+825   [RParen    ] : )
+826   [Operator  ] : /
+827   [Identifier] : SUM
+828   [LParen    ] : (
+829   [Identifier] : s
+830   [Operator  ] : *
+831   [Identifier] : r
+832   [RParen    ] : )
+833   [Comma     ] : ,
+834   [Number    ] : 0
+835   [RParen    ] : )
+836   [Comma     ] : ,
+837   [Identifier] : IF
+838   [LParen    ] : (
+839   [Unknown   ] : œ
+840   [Unknown   ] : Å
+841   [Comparison] : <=
+842   [Number    ] : 0.25
+843   [Comma     ] : ,
+844   [Number    ] : 0.25
+845   [Operator  ] : *
+846   [Identifier] : ns
+847   [Comma     ] : ,
+848   [Identifier] : IF
+849   [LParen    ] : (
+850   [Identifier] : AND
+851   [LParen    ] : (
+852   [Unknown   ] : œ
+853   [Unknown   ] : Å
+854   [Comparison] : >
+855   [Number    ] : 0.75
+856   [Comma     ] : ,
+857   [Identifier] : ns
+858   [Comparison] : =
+859   [Identifier] : Delta
+860   [RParen    ] : )
+861   [Comma     ] : ,
+862   [Identifier] : MIN
+863   [LParen    ] : (
+864   [Number    ] : 2
+865   [Operator  ] : *
+866   [Identifier] : Delta
+867   [Comma     ] : ,
+868   [Identifier] : Delta_max
+869   [RParen    ] : )
+870   [Comma     ] : ,
+871   [Identifier] : Delta
+872   [RParen    ] : )
+873   [RParen    ] : )
+874   [Comma     ] : ,
+875   [Identifier] : rep
+876   [RParen    ] : )
+877   [RParen    ] : )
+878   [RParen    ] : )
+879   [RParen    ] : )
+880   [Comma     ] : ,
+881   [Identifier] : init_JT
+882   [Comma     ] : ,
+883   [Identifier] : JT
+884   [LParen    ] : (
+885   [Identifier] : init_d
+886   [RParen    ] : )
+887   [Comma     ] : ,
+888   [Identifier] : rep
+889   [LParen    ] : (
+890   [Number    ] : 1
+891   [Comma     ] : ,
+892   [Identifier] : init_d
+893   [Comma     ] : ,
+894   [Identifier] : sf
+895   [LParen    ] : (
+896   [Identifier] : init_d
+897   [RParen    ] : )
+898   [Comma     ] : ,
+899   [Identifier] : init_JT
+900   [Comma     ] : ,
+901   [Identifier] : MMULT
+902   [LParen    ] : (
+903   [Identifier] : init_JT
+904   [Comma     ] : ,
+905   [Identifier] : f
+906   [LParen    ] : (
+907   [Identifier] : init_d
+908   [RParen    ] : )
+909   [RParen    ] : )
+910   [Comma     ] : ,
+911   [Identifier] : MMULT
+912   [LParen    ] : (
+913   [Identifier] : init_JT
+914   [Comma     ] : ,
+915   [Identifier] : TRANSPOSE
+916   [LParen    ] : (
+917   [Identifier] : init_JT
+918   [RParen    ] : )
+919   [RParen    ] : )
+920   [Comma     ] : ,
+921   [Number    ] : 10
+922   [Comma     ] : ,
+923   [Identifier] : rep
+924   [RParen    ] : )
+925   [RParen    ] : )
+926   [RParen    ] : )

@@ -5,7 +5,7 @@
 		"commands" : [],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"extern/glfw/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -22,35 +22,29 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "ExcelerImGui::@6890427a1f51a3e7e1df"
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "glfw::@81d610105217ee077306"
-		},
-		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"folder" : 
 	{
 		"name" : "CMakePredefinedTargets"
 	},
-	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"id" : "ALL_BUILD::@13c6ebe2c8011b876f32",
 	"isGeneratorProvided" : true,
 	"name" : "ALL_BUILD",
 	"orderDependencies" : 
 	[
-		{
-			"id" : "ExcelerImGui::@6890427a1f51a3e7e1df"
-		},
 		{
 			"id" : "glfw::@81d610105217ee077306"
 		}
 	],
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "extern/glfw",
+		"source" : "extern/glfw"
 	},
 	"sources" : [],
 	"type" : "UTILITY"

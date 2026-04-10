@@ -8,10 +8,10 @@
 #include "TextEditor.h"
 
 
+
 // ==========================================
 // 1. エディタ言語定義
-// ==========================================
-
+// =========================================
 
 inline TextEditor::LanguageDefinition GetExcelDefinition() {
     TextEditor::LanguageDefinition Excellang;
@@ -81,55 +81,19 @@ inline TextEditor::LanguageDefinition GetExcelDefinition() {
 
     return Excellang;
 }
+
+
+
 // ==========================================
 // 2. 字句解析 (Lexer)
 // ==========================================
-enum class TokenType { Identifier, Number, String, Operator, LParen, RParen, Comma };
 
-struct Token {
-    TokenType type;
-    std::string value;
-};
-
-inline std::vector<Token> tokenize(const std::string& input) {
-    std::vector<Token> tokens;
-    size_t i = 0;
-    while (i < input.length()) {
-        char c = input[i];
-        if (isspace(c)) { i++; continue; }
-
-        if (c == '"') {
-            std::string s; s += c; i++;
-            while (i < input.length() && input[i] != '"') s += input[i++];
-            if (i < input.length()) s += input[i++];
-            tokens.push_back({ TokenType::String, s });
-            continue;
-        }
-
-        if (isalnum(c) || c == '_' || c == '@' || c == '.') {
-            std::string id;
-            while (i < input.length() && (isalnum(input[i]) || input[i] == '_' || input[i] == '.')) {
-                id += input[i++];
-            }
-            if (isdigit(id[0])) tokens.push_back({ TokenType::Number, id });
-            else tokens.push_back({ TokenType::Identifier, id });
-            continue;
-        }
-
-        switch (c) {
-            case '(': tokens.push_back({ TokenType::LParen, "(" }); break;
-            case ')': tokens.push_back({ TokenType::RParen, ")" }); break;
-            case ',': tokens.push_back({ TokenType::Comma, "," }); break;
-            default:  tokens.push_back({ TokenType::Operator, std::string(1, c) }); break;
-        }
-        i++;
-    }
-    return tokens;
-}
+#include "lexer.hpp"
 
 // ==========================================
 // 3. 抽象構文木 (AST) のノード設計
 // ==========================================
+
 struct ASTNode {
     virtual ~ASTNode() = default;
     virtual std::string format(int indent) const = 0;
@@ -179,7 +143,7 @@ struct FuncNode : public ASTNode {
                     res += args[i]->format(indent + 1) + ", ";
                 }
             }
-        } 
+        }
         else if (upper_name == "LET") {
             res += "\n";
             for (size_t i = 0; i < args.size(); ++i) {
@@ -209,9 +173,12 @@ struct FuncNode : public ASTNode {
     }
 };
 
+
+
 // ==========================================
 // 4. 構文解析器 (Parser)
 // ==========================================
+
 class Parser {
     std::vector<Token> tokens;
     size_t pos = 0;
@@ -262,9 +229,12 @@ private:
     }
 };
 
+
+
 // ==========================================
 // 5. 外部インターフェース
 // ==========================================
+
 inline std::string minify_excel(const std::string& input) {
     std::string result;
     bool in_string = false;

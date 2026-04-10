@@ -1,3 +1,4 @@
+#pragma once
 #include <cctype>
 #include <cstddef>
 #include <iostream>
@@ -9,7 +10,6 @@
 #include <iomanip> // 表示を整えるため
 #include <string>
 
-//#include "logic.hpp"
 
 enum class TokenType { Identifier, Number, String, Operator, LParen, RParen, LBrace, RBrace, LBracket, RBracket, Semicolon, Comma, Comparison, Error, Unknown, Exclamation };
 
@@ -195,105 +195,4 @@ inline std::vector<Token> tokenize(const std::string& input) {
         i++;
     }
     return tokens;
-}
-
-
-
-// TokenType を文字列に変換するヘルパー関数
-std::string to_string(TokenType type) {
-    switch (type) {
-        case TokenType::Identifier: return "Identifier";
-        case TokenType::Number:     return "Number    ";
-        case TokenType::String:     return "String    ";
-        case TokenType::Operator:   return "Operator  ";
-        case TokenType::LParen:     return "LParen    ";
-        case TokenType::RParen:     return "RParen    ";
-        case TokenType::Comma:      return "Comma     ";
-        case TokenType::Error:      return "Error     ";
-        case TokenType::Comparison: return "Comparison";
-        case TokenType::LBrace:     return "LBrace    ";
-        case TokenType::RBrace:     return "RBrace    ";
-        case TokenType::LBracket:   return "LBracket  ";
-        case TokenType::RBracket:   return "RBracket  ";
-        case TokenType::Semicolon:  return "Semicolon ";
-        case TokenType::Exclamation:return "Exclamation";
-        // 今後追加する予定の型も定義しておくとビルドが通ります
-        // case TokenType::Intersection: return "Intersect ";
-        default:                    return "Unknown   ";
-    }
-}
-
-int to_num(TokenType type) {
-    switch (type) {
-        case TokenType::Identifier: return 0;
-        case TokenType::Number:     return 1;
-        case TokenType::String:     return 2;
-        case TokenType::Operator:   return 3;
-        case TokenType::LParen:     return 4;
-        case TokenType::RParen:     return 5;
-        case TokenType::Comma:      return 6;
-        case TokenType::Error:      return 7;
-        case TokenType::Comparison: return 8;
-        case TokenType::LBrace:     return 9;
-        case TokenType::RBrace:     return 10;
-        case TokenType::LBracket:   return 11;
-        case TokenType::RBracket:   return 12;
-        case TokenType::Semicolon:  return 13;
-        case TokenType::Exclamation:return 14;
-        // 今後追加する予定の型も定義しておくとビルドが通ります
-        // case TokenType::Intersection: return "Intersect ";
-        default:                    return 14;
-    }
-}
-
-int main() {
-    // 1. input.txt から数式を読み込む
-    // std::istreambuf_iterator はアロケーションを抑えて一気に読み込むのに効率的ですね
-    std::ifstream ifs("input.txt");
-    if (!ifs) {
-        std::cerr << "Error: Cannot open input.txt" << std::endl;
-        return 1;
-    }
-    std::string content((std::istreambuf_iterator<char>(ifs)), std::istreambuf_iterator<char>());
-
-    // 2. トークン化実行
-    // logic.hpp に定義した tokenize 関数を呼び出し
-    std::vector<Token> tokens = tokenize(content);
-
-    // 3. output.txt に結果を書き出す
-    std::ofstream ofs("output.txt");
-    if (!ofs) {
-        std::cerr << "Error: Cannot open output.txt" << std::endl;
-        return 1;
-    }
-
-    ofs << "--- Excel Formula Tokenization Report ---" << std::endl;
-    ofs << "Total Tokens: " << tokens.size() << std::endl;
-    ofs << "Token number / input.size(): " << (tokens.size() / (double)content.size()) << "\n" << std::endl;
-    
-    // ヘッダー
-    ofs << std::left << std::setw(6)  << "Index" 
-        << std::left << std::setw(15) << "Type" 
-        << "Value" << std::endl;
-    ofs << std::string(40, '-') << std::endl;
-
-    int cnt[15] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-    for (size_t i = 0; i < tokens.size(); ++i) {
-        const auto& t = tokens[i];
-        ofs << std::left << std::setw(6)  << i 
-            << "[" << to_string(t.type) << "] : " 
-            << t.value
-            << std::endl;
-            cnt[to_num(t.type)]++;
-    }
-
-    std::cout << "Successfully tokenized " << tokens.size() << " tokens." << std::endl;
-    std::cout << "Results saved to output.txt" << std::endl;
-    for (size_t i = 0; i < 15; i++)
-    {
-        std::cout << cnt[i] << std::endl;
-    }
-    
-
-    return 0;
 }
